@@ -20,4 +20,6 @@ app.get('/login', (req, res) =>{
 });
 
 app.use(router);
-app.listen(3030, ()=> console.log('Servidor Corriendo'));
+const port = process.env.PORT || 3001;
+app.listen(port, () => console.log(`Servidor corriendo en el puerto S (port)`));
+//app.listen(3030, ()=> console.log('Servidor Corriendo'));//
